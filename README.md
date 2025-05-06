@@ -1,7 +1,9 @@
 # READ ME
 
-Talk *'Learning Stigmergic Communication for Self-organising Coordination'* given by [Stefano Mariani](https://smarianimore.github.io) at [ACSOS 2023](https://2023.acsos.org/track/acsos-2023-papers?#program). 
-Slides here: [https://smarianimore.github.io/2023-acsos-RL-swarms/](https://smarianimore.github.io/2023-acsos-RL-swarms/)
+Talk *'Learning to cooperate via spatially situated communication'* given by [Stefano Mariani](https://smarianimore.github.io) at the ["CO-OPTION" Open Workshop](https://drive.google.com/file/d/1ItbNKHBz3VufAWaowwjv3D1OYT1EcZ1v/view?usp=sharing): Human cooperation for the sustainable management of public goods. 
+Slides here: [https://smarianimore.github.io/2025-far-open-workshop/](https://smarianimore.github.io/2025-far-open-workshop/)
+
+Mostly based on [this paper](https://ieeexplore.ieee.org/document/10336011).
 
 # Credits
 
