@@ -432,9 +432,135 @@
               ## What now?
               ----
               1. Given a cooperative goal, agents can learn communication policies that enable its achievement!
+            </script>
+          </section>
+          <section data-markdown data-auto-animate>
+            <script type="text/template">
+              ## What now?
+              ----
+              1. Given a cooperative goal, agents can learn communication policies that enable its achievement!
+              2. Spatially situated communication (stigmergy), in particular, is extremely efficient (biology docet)
+            </script>
+          </section>
+          <section data-markdown data-auto-animate>
+            <script type="text/template">
+              ## What now?
+              ----
+              1. Given a cooperative goal, agents can learn communication policies that enable its achievement!
               2. Spatially situated communication (stigmergy), in particular, is extremely efficient (biology docet)
               3. With RL, we can <em>control</em> what gets learnt via actions, observations, and most importantly <em>rewards</em>
-              4. Can we apply similar methods to, e.g., <em>social dilemmas</em> (e.g. prisoner)?
+            </script>
+          </section>
+          <section data-markdown data-auto-animate>
+            <script type="text/template">
+              ## What now?
+              ----
+              1. Given a cooperative goal, agents can learn communication policies that enable its achievement!
+              2. Spatially situated communication (stigmergy), in particular, is extremely efficient (biology docet)
+              3. With RL, we can <em>control</em> what gets learnt via actions, observations, and most importantly <em>rewards</em>
+              4. Can we apply similar methods to, e.g., <em>social dilemmas</em> (e.g. prisoners')?
+            </script>
+          </section>
+        </section>
+
+        <section data-transition="convex" data-background-image="res/" data-background-opacity="0.1" data-background-size="contain">
+          <section data-markdown data-auto-animate>
+            <script type="text/template">
+              ## Prisoners' Dilemma
+              ----
+              - Many Public Good Games model agents with two action choices: cooperate vs. defect
+              - The Prisoners' Dilemma (PD) is the minimal game featuring these actions
+              - The Iterated (or sequential) PD highlights limitations of rational behaviour (Nash Equilibrium)
+                  - short term $\Rightarrow$ defect
+                  - long term $\Rightarrow$ cooperate
+            </script>
+          </section>
+          <section data-markdown data-auto-animate>
+            <script type="text/template">
+              ## Prisoners' Dilemma Game
+              ----
+              - Two men charged with a crime
+              - No communicating allowed
+                  - if one confesses (=defect) and the other does not (=cooperate) $\Rightarrow$
+                      - confessor freed (5 years saved)
+                      - other jailed 5 years (0 years saved)
+                  - if both confess $\Rightarrow$ each jailed 4 years (1 saved)
+                  - if none confess $\Rightarrow$ each jailed for 2 (3 saved)
+            </script>
+          </section>
+          <section data-markdown data-auto-animate>
+            <script type="text/template">
+              ## Prisoners' Dilemma Payoffs
+              ----
+              <img data-src="res/PD-payoffs.png">
+
+              Defect is the rational choice..?!?
+            </script>
+          </section>
+          <section data-markdown data-auto-animate>
+            <script type="text/template">
+              ## Pheromone as reputation
+              ----
+              - In nature, pheromones realize indirect (i.e., stigmergic) communication
+              - To some extent, they signal some specific (good or bad) properties of regions of space
+
+              Key idea: exploit pheromones to mark regions where cooperation thrives (high reputation)
+            </script>
+          </section>
+          <section data-markdown data-auto-animate>
+            <script type="text/template">
+              ## Axelroad's tournament (1)
+              ----
+              <style>
+                .container{
+                  display: flex;
+                }
+                .col{
+                  flex: 1;
+                }
+              </style>
+              <div class="container">
+                <div class="col">
+                  <img data-src="res/PD-start.png">
+                </div>
+                <div class="col">
+                  <ul>
+                    <li> agents (players) randomly move in 2D </li>
+                    <li> when 2 meet they play the PD game </li>
+                    <li> when they both cooperate they drop pheromone </li>
+                    <li> when they smell pheromone they preferably follow </li>
+                  </ul>
+                </div>
+              </div>
+            </script>
+          </section>
+          <section data-markdown data-auto-animate>
+            <script type="text/template">
+              ## Axelroad's tournament (2)
+              ----
+              <style>
+                .container{
+                  display: flex;
+                }
+                .col{
+                  flex: 1;
+                }
+              </style>
+              <div class="container">
+                <div class="col">
+                  <img data-src="res/PD-island-1.png">
+                </div>
+                <div class="col">
+                  <img data-src="res/PD-island-2.png">
+                </div>
+              </div>
+            </script>
+          </section>
+          <section data-markdown data-auto-animate>
+            <script type="text/template">
+              ## Results
+              ----
+              <img data-src="res/PD-plot-1.png">
             </script>
           </section>
         </section>
